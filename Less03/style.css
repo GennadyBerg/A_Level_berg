@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-item .nav-link {
+  color: grey;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item + .nav-item {
+  padding-left: 15px;
+}
+.block {
+  width: 300px;
+  margin: 0 auto;
+  background: green;
+  border: 10px groove yellow;
+  padding: 10px;
+}
+
+.content-box {
+  box-sizing: content-box;
+}

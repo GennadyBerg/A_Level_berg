@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*задавливание футера вниз*/
+}
+
+.holder {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    height: 100px;
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: yellow;
+    padding: 20px 0;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    flex-grow: 1;
+    /*растянули на вё пространство*/
+    display: flex;
+    align-items: center;
+    /*выравнивание элементов по вертикали*/
+    justify-content: flex-end;
+    /*все эл-ты прибиты к правому краю*/
+}
+
+.burger {
+    opacity: 0;
+    position: absolute;
+    left: -9999999px;
+}
+
+.opener {
+    position: relative;
+    height: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .opener {
+        display: none;
+    }
+}
+
+.opener::before,
+.opener::after,
+.opener span {
+    position: absolute;
+    height: 3px;
+    background: #000;
+    left: 0;
+    right: 0;
+}
+
+.opener::before,
+.opener::after {
+    content: '';
+}
+
+.opener::before {
+    top: 0;
+}
+
+.opener::after {
+    bottom: 0;
+}
+
+.opener span {
+    top: 16px;
+}
+
+
+.nav-list {
+    /*display: flex;
+    align-items: center;
+    /*выравнивание ли между собой*/
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: yellow;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.burger:checked~.nav-list {
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+    /*увеличение отступа чтоб было удобно нажимать пальцем*/
+}
+
+@media (min-width: 768px) {
+    .nav-list {
+        position: static;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .nav-item+.nav-item {
+        padding-left: 15px;
+    }
+}
+
+.nav-item+.nav-item {
+    padding-left: 15px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    text-align: center;
+    flex: 0 0 210px;
+    padding: 20px;
+}
+
+.sidebar-left {
+    background-color: violet;
+    order: -1;
+}
+
+.sidebar-right {
+    background-color: skyblue;
+
+}
+
+.content {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    padding: 20px;
+    flex-grow: auto;
+    width: calc(100% - 420px);
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    width: 33.3%;
+    padding: 0 15px 30px;
+    min-width: 220px;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+
+    min-height: 100%;
+
+}
+
+.card-img {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: peru;
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer {
+    padding: 20px;
+    background: lightgreen;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    min-width: 50px;
+    background-color: rgb(61, 26, 93);
+}

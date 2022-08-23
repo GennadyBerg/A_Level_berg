@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+html {box-sizing: border-box;
+}
+
+*,
+*,::before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.nav-item .nav-link{
+    color:grey;
+    text-decoration: none;
+
+}
+.nav-list{list-style: none;
+padding-left: 0%;
+margin: 0%;
+display:flex
+}
+.nav-item +.nav-item{
+    padding-left: 15px;
+}
+

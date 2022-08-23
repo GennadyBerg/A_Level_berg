@@ -1,0 +1,156 @@
+@keyframes circle{
+    0%{
+        top: 0;
+        left: 0;
+        background: red;
+
+    }
+    25%{
+        top:calc(100% - 100px);
+        left: 0;
+        background: blue;
+        
+    }
+    50%{
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+        background: green;
+    }
+    75%{
+        top:0;
+        left:calc(100% - 100px);
+        background:yellow;
+
+
+    }
+    100%{
+        position:absolute;
+        top:0;
+        left:0;
+        backgroun:red;
+    }
+}
+body {
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .relative {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  
+  .box {
+    position: relative;
+    min-height: 100vh;
+    background: blue;
+  }
+  
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: yellow;
+  }
+  
+  .box:before,
+  .inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 1px;
+    background-color: white;
+  }
+  
+  .box:after,
+  .inner:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: white;
+  }
+  
+  .inner:after,
+  .inner:before {
+    background: #000;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: green;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 30px;
+    transform: scale(1.2);
+  }
+  
+  .btn:hover {
+    background: yellow;
+    color: blue;
+    transition: all 1s ease-in-out 3s;
+    transform: skew(15deg);
+  }
+  .animation-relative{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+  }
+  .animation-box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:red ;
+    animation: circle 5s ease infinite;
+
+
+
+  }

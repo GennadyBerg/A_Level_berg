@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+  }
+  /*Всегда пишем:*/
+  html {
+    box-sizing: border-box;
+  }
+  /*Всегда пишем:*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  

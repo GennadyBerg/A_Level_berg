@@ -1,0 +1,32 @@
+.box{
+    box-sizing: border-box;
+    width: 350px;
+    height: 220px;
+    padding-top:15px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border-style: dashed;
+    border-color: red;
+    border-width: 2px;
+    background-color: green;
+}
+.txt-img-box{
+    box-sizing: content-box;
+    text-align: justify;
+    width: 920px;
+    font-size: 26px;
+}
+.left-img{
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 12px;
+}
+.right-img{
+    width: 220px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}

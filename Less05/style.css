@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+/*Всегда пишем:*/
+html {
+  box-sizing: border-box;
+}
+/*Всегда пишем:*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*Всегда пишем:*/
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh; /*задавливание футера вниз*/
+  display: flex; /*задавливание футера вниз*/
+  flex-direction: column; /*задавливание футера вниз*/
+}
+/*Всегда пишем:*/
+.container {
+  max-width: 1330px; /*компенсация паддингов по 15рх*/
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*Всегда пишем:*/
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/*Всегда пишем:*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: yellow;
+  padding: 20px 0;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  flex-grow: 1; /*растянули на вё пространство*/
+  display: flex;
+  align-items: center; /*выравнивание элементов по вертикали*/
+  justify-content: flex-end;  /*все эл-ты прибиты к правому краю*/
+}
+
+.nav-list {
+  display: flex;
+  align-items: center; /*выравнивание ли между собой*/
+}
+
+.nav-item + .nav-item {
+  padding-left: 15px;
+}
+
+.nav-link {
+color: #000;
+}
+
+.nav-link:hover {
+  opacity: .7;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  text-align: center;
+  flex: 0 0 210px;
+  padding: 20px;
+}
+
+.sidebar-left {
+  background-color: violet;
+  order: -1;
+}
+
+.sidebar-right {
+  background-color: skyblue;
+
+}
+
+.content {
+  padding: 20px;
+  flex-grow: auto;
+  width: calc(100% - 420px);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /*компенсация дополнительных паддингов*/
+}
+
+.col {
+  width: 33.333%;
+  padding: 0 15px 30px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-img {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto  15px;
+  border-radius: 50%;
+  background-color: peru;
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer {
+  padding: 20px;
+  background: lightgreen;
+  text-align: center;
+}
+.btn{
+
+}
