@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+}
+
+/*Всегда пишем:*/
+html {
+    box-sizing: border-box;
+}
+
+/*Всегда пишем:*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*Всегда пишем:*/
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    /*задавливание футера вниз*/
+    display: flex;
+    /*задавливание футера вниз*/
+    flex-direction: column;
+    /*задавливание футера вниз*/
+}
+
+/*Всегда пишем:*/
+.container {
+    max-width: 1330px;
+    /*компенсация паддингов по 15рх*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Всегда пишем:*/
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/*Всегда пишем:*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-skills {
+    padding: 100px 0 70px;
+}
+
+.section-skills .row {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.section-skills .col {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.skill-holder .section-title {
+    margin: 0 0 50px;
+    font-size: 32px;
+    line-height: 1.15;
+}
+
+.skill-list {
+    max-width: 445px;
+    width: 100%;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-title {
+    font-size: 16px;
+    line-height: 1.6;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #727272;
+}
+
+.skill-loader {
+    position: relative;
+    height: 4px;
+    background: #c4c4c4;
+}
+
+.skill-load {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #34547A;
+}
+
+.col-img {
+    background-position: center;
+    background-size: cover;
+    padding-top: 81%;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery-item {
+    width: 25%;
+    padding-top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.gallery-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(52, 84, 122, 0.8);
+
+}
+
+.gallery-item:after {
+    content: '';
+    height: 58px;
+    width: 100px;
+    background: url('img/eye.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+
+}
