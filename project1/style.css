@@ -114,6 +114,10 @@ a {
     background-size: cover;
     padding-top: 81%;
 }
+.section-gallery{
+    width: auto;
+    background-color: #727272;
+}
 
 .gallery-list {
     display: flex;
@@ -148,7 +152,26 @@ a {
     background: url('img/eye.png');
     background-position: center;
     background-repeat: no-repeat;
-    
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-item:before,
+.gallery-item:after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery-item:hover:before,
+.gallery-item:after {
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 }
