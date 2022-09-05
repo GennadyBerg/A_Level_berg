@@ -114,66 +114,43 @@ a {
     background-size: cover;
     padding-top: 81%;
 }
+.my-work{
+    margin: auto;
+    position: relative;
+    background-color: lightgrey;
+}
 
 .my-work-text {
     margin: auto;
     text-align: center;
     max-width: 40%;
+    font-size: 32px;
 }
 
 .my-work-video {
-    display: flex;
-    justify-items: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    max-width: 60%;
-    padding: 25px 0 55px 0;
-    vertical-align: middle;
-
-    z-index: 1;
-}
-
-.button-play {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    position: absolute;
-    vertical-align: middle;
-    
-    z-index: 3;
-}
-
-#triangle-right {
-    border-top: 20px solid transparent;
-    border-left: 30px solid black;
-    border-bottom: 20px solid transparent;
-}
-
-#circle {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 60px;
-    height: 60px;
-    background: rgb(237, 229, 229);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    padding-bottom: 50px;
+    
+}
+.video-main{
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
+    margin: auto;
+}
+.button-play{
+    position: absolute;
+    left: 48%;
+    top: 38%;
 }
 
 .section-gallery {
-    width: 100%;
+    position: relative;
+    max-width: 1330px;
+    margin: auto;
     background-color: #727272;
+
 }
 
 .gallery-list {
@@ -229,4 +206,21 @@ a {
     transition: opacity .3s ease-in-out;
     opacity: 1;
     visibility: visible;
+}
+.clients{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1330px;
+    height: 40%;
+    margin: auto;
+   
+}
+.client-logo{
+   
+    max-width: 15%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-self: center;
+    margin: auto;
 }
