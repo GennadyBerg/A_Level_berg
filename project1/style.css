@@ -114,9 +114,43 @@ a {
     background-size: cover;
     padding-top: 81%;
 }
-.section-gallery{
-    width: auto;
+.my-work{
+    margin: auto;
+    position: relative;
+    background-color: lightgrey;
+}
+
+.my-work-text {
+    margin: auto;
+    text-align: center;
+    max-width: 40%;
+    font-size: 32px;
+}
+
+.my-work-video {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.video-main{
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
+    margin: auto;
+}
+.button-play{
+    position: absolute;
+    left: 48%;
+    top: 38%;
+}
+
+.section-gallery {
+    position: relative;
+    max-width: 1330px;
+    margin: auto;
     background-color: #727272;
+
 }
 
 .gallery-list {
@@ -126,8 +160,10 @@ a {
 }
 
 .gallery-item {
+    display: block;
+    height: 100px;
     width: 25%;
-    padding-top: 0;
+    padding-top: 25%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,12 +202,25 @@ a {
 }
 
 .gallery-item:hover:before,
-.gallery-item:after {
+.gallery-item:hover:after {
     transition: opacity .3s ease-in-out;
     opacity: 1;
     visibility: visible;
 }
-
-
-
+.clients{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1330px;
+    height: 40%;
+    margin: auto;
+   
+}
+.client-logo{
+   
+    max-width: 15%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-self: center;
+    margin: auto;
 }
